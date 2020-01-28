@@ -1,0 +1,184 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red63\green127\blue95;\red106\green62\blue62;
+\red0\green0\blue192;\red42\green0\blue255;\red127\green0\blue85;\red63\green127\blue95;\red106\green62\blue62;
+\red0\green0\blue192;\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c41569\c24314\c24314;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c41569\c24314\c24314;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;}
+\margl1440\margr1440\vieww29980\viewh15820\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs48 \cf2 import\cf0  java.util.*;\cf3 //this is important for reading from keyboard\cf0 \
+\cf2 public\cf0  \cf2 class\cf0  TestApp \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf4 args\cf0 ) \{\
+		\cf3 //this program is to let the user product price and quantity\cf0 \
+		\cf3 // Give 7% discount if the quantity is more than 15\cf0 \
+		\cf3 //then find the total and add 13% tax on it then print the result\cf0 \
+		Scanner \cf4 \ul \ulc4 input\cf0 \ulnone  = \cf2 new\cf0  Scanner(System.\cf5 in\cf0 );\
+		System.\cf5 out\cf0 .println(\cf6 "Enter the product price:"\cf0 );\
+		\cf2 double\cf0  \cf4 price\cf0 =\cf4 input\cf0 .nextDouble();\
+		System.\cf5 out\cf0 .println(\cf6 "Enter the quantity:"\cf0 );\
+		\cf2 int\cf0  \cf4 quantity\cf0 =\cf4 input\cf0 .nextInt();\
+		\cf2 if\cf0 (\cf4 quantity\cf0 >15)\
+			\cf4 price\cf0  = \cf4 price\cf0 -\cf4 price\cf0 *0.07;\
+		\cf2 double\cf0  \cf4 total\cf0 =\cf4 price\cf0 *\cf4 quantity\cf0 ;\
+		\cf4 total\cf0 =\cf4 total\cf0 *1.13;\
+		System.\cf5 out\cf0 .println(\cf6 "The reult is:"\cf0 +\cf4 total\cf0 );\
+		\
+		\
+		\
+	\}\
+\
+\}\
+\
+Create a java program to let the user enter an annual salary of an employee\
+then find the tax which is 26% if the annual salary more than 85k\
+and 18% if the annual salary more than 60k and no tax otherwise.\
+Then after subtracting the tax find and print out the monthly salary and the \
+bi-weekly salary\
+\cf2 import\cf0  java.util.*;\cf3 //this is important for reading from keyboard\cf0 \
+\cf2 public\cf0  \cf2 class\cf0  TestApp \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf4 args\cf0 ) \{\
+		\
+		Scanner \cf4 \ul input\cf0 \ulnone  = \cf2 new\cf0  Scanner(System.\cf5 in\cf0 );\
+		System.\cf5 out\cf0 .println(\cf6 "Enter the product annual salary:"\cf0 );\
+		\cf2 double\cf0  \cf4 annualSalary\cf0 =\cf4 input\cf0 .nextDouble();\
+		\cf2 double\cf0  \cf4 tax\cf0 ;\
+		\cf2 if\cf0 (\cf4 annualSalary\cf0 >85000)\
+			 \cf4 tax\cf0 =0.26;\
+		\cf2 else\cf0  \cf2 if\cf0 (\cf4 annualSalary\cf0 >60000)\
+			\cf4 tax\cf0 =0.18;\
+		\cf2 else\cf0 \
+			\cf4 tax\cf0 =0;\
+		\cf4 annualSalary\cf0 =\cf4 annualSalary\cf0 -\cf4 tax\cf0 *\cf4 annualSalary\cf0 ;\
+		\cf2 double\cf0  \cf4 monthlySalary\cf0 =\cf4 annualSalary\cf0 /12;\
+		\cf2 double\cf0  \cf4 biWeeklySalary\cf0 =\cf4 annualSalary\cf0 /26;\
+		System.\cf5 out\cf0 .println(\cf6 "The monthly salary ="\cf0 +\cf4 monthlySalary\cf0 +\cf6 "\\nBi-Weekly salary ="\cf0 +\cf4 biWeeklySalary\cf0 );\
+		\
+		\
+create a java program to find the roots of an equation \
+let the user enter the values for a,b, and c then find x1 and x2\
+\
+\cf2 import\cf0  java.util.*;\cf3 //this is important for reading from keyboard\cf0 \
+\cf2 public\cf0  \cf2 class\cf0  TestApp \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf4 args\cf0 ) \{\
+		\
+		Scanner \cf4 \ul input\cf0 \ulnone  = \cf2 new\cf0  Scanner(System.\cf5 in\cf0 );\
+		System.\cf5 out\cf0 .println(\cf6 "a,b,and c:"\cf0 );\
+		\cf2 double\cf0  \cf4 x1\cf0 =0,\cf4 x2\cf0 =0;\
+		\cf2 int\cf0  \cf4 a\cf0 =\cf4 input\cf0 .nextInt();\
+		\cf2 int\cf0  \cf4 b\cf0 =\cf4 input\cf0 .nextInt();\
+		\cf2 int\cf0  \cf4 c\cf0 =\cf4 input\cf0 .nextInt();\
+		\cf2 int\cf0  \cf4 d\cf0  = (\cf4 b\cf0 *\cf4 b\cf0 )-(4*\cf4 a\cf0 *\cf4 c\cf0 );\
+		\cf2 if\cf0  (\cf4 d\cf0 >=0)\{\
+		\cf4 x1\cf0 =(-\cf4 b\cf0 -Math.sqrt(\cf4 d\cf0 ))/(2*\cf4 a\cf0 );\
+		\cf4 x2\cf0 =(-\cf4 b\cf0 +Math.sqrt(\cf4 d\cf0 ))/(2*\cf4 a\cf0 );\}\
+		\cf2 else\cf0 \
+			System.\cf5 out\cf0 .println(\cf6 "Imaginery roots"\cf0 );\
+		\
+		System.\cf5 out\cf0 .println(\cf6 "X1="\cf0 +\cf4 x1\cf0 +\cf6 "\\nX2="\cf0 +\cf4 x2\cf0 );	\
+		\
+	\}\
+\
+\}\
+\
+Create a program that asks the user to enter their lucky number between 1 to 15\
+let the program generate a random number up to 15 and then check\
+if the entered number equals the generated number then stop and print \'93Congratulations! you won\'94\
+if the user tries 5 times and never enters the number 9 stop and print\
+\'93sorry you lost\'94\
+\pard\pardeftab720\partightenfactor0
+\cf7 import\cf0  java.util.*;\cf8 //this is important for reading from keyboard\cf0 \
+\cf7 public\cf0  \cf7 class\cf0  TestApp \{\
+\
+	\cf7 public\cf0  \cf7 static\cf0  \cf7 void\cf0  main(String[] \cf9 args\cf0 ) \{\
+	Scanner \cf9 \ul \ulc9 sc\cf0 \ulnone  = \cf7 new\cf0  Scanner(System.\cf10 in\cf0 );\
+	\cf7 int\cf0  \cf9 i\cf0 ,\cf9 luckyNumber\cf0 ;\
+	Random \cf9 rnd\cf0  = \cf7 new\cf0  Random();\
+	\cf9 luckyNumber\cf0  = \cf9 rnd\cf0 .nextInt(15);\
+	\
+		\cf7 for\cf0 (\cf9 i\cf0 =1;\cf9 i\cf0 <=5;\cf9 i\cf0 ++)\{	\
+		   System.\cf10 out\cf0 .println(\cf11 "Enter your lucky number between 1 to 15:"\cf0 );\
+		   \cf7 int\cf0  \cf9 number\cf0  = \cf9 sc\cf0 .nextInt();\
+		   \cf7 if\cf0 (\cf9 number\cf0 ==\cf9 luckyNumber\cf0 )\
+		   \{\
+			   System.\cf10 out\cf0 .println(\cf11 "Congratulation you won"\cf0 );\
+			   \cf7 break\cf0 ;\
+		   \}\
+		\
+	\}\
+\
+create a program that prints 15 elements of Fibonacii series\
+1 1 2 3 5 8 13 21 \'85 \
+\cf7 public\cf0  \cf7 class\cf0  TestApp \{\
+\
+	\cf7 public\cf0  \cf7 static\cf0  \cf7 void\cf0  main(String[] \cf9 args\cf0 ) \{\
+\cf8 //	Scanner \ul sc\ulnone  = new Scanner(System.in);\cf0 \
+	\cf7 int\cf0  \cf9 a\cf0 =1;\
+	\cf7 int\cf0  \cf9 b\cf0 =1;\
+	System.\cf10 out\cf0 .print(\cf9 a\cf0 +\cf11 ","\cf0 +\cf9 b\cf0 +\cf11 ","\cf0 );\
+	\cf7 int\cf0  \cf9 c\cf0 ;\
+	\cf7 for\cf0  (\cf7 int\cf0  \cf9 i\cf0 =3;\cf9 i\cf0 <=15;\cf9 i\cf0 ++)\
+	\{\
+		\cf9 c\cf0 =\cf9 a\cf0 +\cf9 b\cf0 ;\
+		System.\cf10 out\cf0 .print(\cf9 c\cf0 +\cf11 ","\cf0 );\
+		\cf9 a\cf0 =\cf9 b\cf0 ;\
+		\cf9 b\cf0 =\cf9 c\cf0 ;\
+	\}\
+		\
+	\
+	\}\
+\
+\}\
+\
+Let the user enters, monthly salaries of 7 sales employees. and their monthly sales amount \
+and enter the sales target.\
+then find the commission for each, then the total salary which is salary+commission\
+commission = 5% of sales amount if the if the employee achieved 100% of the target or more\
+				 = 3% of sales amount if the employee achieved 75% to 99% of the target\
+				 = 1% of sales amount if the sales amount less than 75% of the target.\
+Note: there is only 1 target for all employees.\
+Print out the total salary for each employee.\
+Find and print the average of total salaries of all employees.\
+\
+\cf7 import\cf0  java.util.*;\cf8 //this is important for reading from keyboard\cf0 \
+\cf7 public\cf0  \cf7 class\cf0  TestApp \{\
+\
+	\cf7 public\cf0  \cf7 static\cf0  \cf7 void\cf0  main(String[] \cf9 args\cf0 ) \{\
+	Scanner \cf9 \ul \ulc9 sc\cf0 \ulnone  = \cf7 new\cf0  Scanner(System.\cf10 in\cf0 );\
+	System.\cf10 out\cf0 .println(\cf11 "Enter the sales target:"\cf0 );\
+	\cf7 double\cf0  \cf9 target\cf0 =\cf9 sc\cf0 .nextDouble();\
+	\cf7 double\cf0  \cf9 sum\cf0 =0,\cf9 commission\cf0 ;\
+	\cf7 for\cf0 (\cf7 int\cf0  \cf9 i\cf0 =1;\cf9 i\cf0 <=7;\cf9 i\cf0 ++)\{\
+		System.\cf10 out\cf0 .println(\cf11 "Enter the employee salary:"\cf0 );\
+		\cf7 double\cf0  \cf9 salary\cf0 =\cf9 sc\cf0 .nextDouble();\
+		System.\cf10 out\cf0 .println(\cf11 "Enter the employee sales amount:"\cf0 );\
+		\cf7 double\cf0  \cf9 salesAmount\cf0 =\cf9 sc\cf0 .nextDouble();\
+		\cf7 if\cf0 (\cf9 salesAmount\cf0 >=\cf9 target\cf0 )\
+			\cf9 commission\cf0 =0.05*\cf9 salesAmount\cf0 ;\
+		\cf7 else\cf0  \cf7 if\cf0 (\cf9 salesAmount\cf0 >=\cf9 target\cf0 *0.8)\
+			\cf9 commission\cf0 =0.03*\cf9 salesAmount\cf0 ;\
+		\cf7 else\cf0 \
+			\cf9 commission\cf0 =0.01*\cf9 salesAmount\cf0 ;\
+		\cf7 double\cf0  \cf9 total\cf0  = \cf9 salary\cf0  + \cf9 commission\cf0 ;\
+		System.\cf10 out\cf0 .println(\cf11 "The total salary of this emplopyee ="\cf0 +\cf9 total\cf0 );\
+		\cf9 sum\cf0 +=\cf9 total\cf0 ;\
+			\
+	\}\
+	\cf7 double\cf0  \cf9 average\cf0 =\cf9 sum\cf0 /7;\
+	System.\cf10 out\cf0 .println(\cf11 "The average of all total salaries = "\cf0 +\cf9 average\cf0 );\
+		\
+	\
+	\}\
+\
+\}\
+\
+\
+\
+\
+}

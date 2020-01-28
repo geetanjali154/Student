@@ -1,0 +1,92 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 Helvetica-Oblique;
+\f3\fswiss\fcharset0 Helvetica-Bold;\f4\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red44\green62\blue80;\red0\green0\blue254;\red15\green112\blue3;
+\red0\green0\blue109;\red82\green0\blue103;}
+{\*\expandedcolortbl;;\csgenericrgb\c17255\c24314\c31373;\csgenericrgb\c0\c0\c99608;\csgenericrgb\c5882\c43922\c1176;
+\csgenericrgb\c0\c0\c42745;\csgenericrgb\c32157\c0\c40392;}
+\margl1440\margr1440\vieww12540\viewh16140\viewkind1
+\deftab720
+\pard\pardeftab720\ri0\sl259\slmult1\sa160\partightenfactor0
+
+\f0\b\fs22 \cf0 Assignment one\
+\pard\pardeftab720\ri0\sl259\slmult1\sa160\partightenfactor0
+
+\f1\b0 \cf0 Based on what you learned last week, create a one-page app which shows your portfolio. Use the imageView to place a picture of your choice(picture of yourself) along with your name on the top and short description about yourself using textView. Use proper background colour for your name and description which separate it from the background. You must use the color.xml, strings.xml and style.xml in values folder and reference that to your components.\
+Used the same picture for your app icon ( or any other icon you have in mind) for your app on your simulator by replacing your ic_launcher. Make sure to modify your project androidManifast.xml to recognize the new ic_launcher.\
+\pard\pardeftab720\ri0\sa150\partightenfactor0
+
+\fs24 \cf0 The picture has to be compatible with all the mipmap (mdpi,xhdpi,xxhdpi, xxxhdpi) in square and circle shape. You may use the IC launcher development in the following link:\'a0\
+\pard\pardeftab720\ri0\sa150\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://jgilfelt.github.io/AndroidAssetStudio/icons-launcher.html%22%20%5Cl%20%22foreground.space.trim=1&foreground.space.pad=0&foreColor=E8EAF6,0&crop=0&backgroundShape=square&backColor=3F51B5,100&effects=none&elevate=0"}}{\fldrslt \cf2 \ul \ulc2 https://jgilfelt.github.io/AndroidAssetStudio/icons-launcher.html#foreground.space.trim=1&foreground.space.pad=0&foreColor=E8EAF6%2C0&crop=0&backgroundShape=square&backColor=3F51B5%2C100&effects=none&elevate=0}}\
+\pard\pardeftab720\ri0\sl259\slmult1\sa160\partightenfactor0
+
+\fs22 \cf0 \
+Paste your XML code along with a snapshot of the output of your simulator here. Also, upload your project.zip file by exporting it alone with this document.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\i\fs24 \cf0 <?
+\f3\i0\b \cf3 xml version\cf4 ="1.0" \cf3 encoding\cf4 ="utf-8"
+\f2\i\b0 \cf0 ?>\
+
+\f4\i0 <
+\f3\b \cf5 androidx.constraintlayout.widget.ConstraintLayout \cf3 xmlns:\cf6 android\cf4 ="http://schemas.android.com/apk/res/android"\
+    \cf3 xmlns:\cf6 app\cf4 ="http://schemas.android.com/apk/res-auto"\
+    \cf3 xmlns:\cf6 tools\cf4 ="http://schemas.android.com/tools"\
+    \cf6 android\cf3 :layout_width\cf4 ="match_parent"\
+    \cf6 android\cf3 :layout_height\cf4 ="match_parent"\
+    \cf6 android\cf3 :background\cf4 ="#007A4C4C"\
+    \cf6 tools\cf3 :context\cf4 =".MainActivity"
+\f4\b0 \cf0 >\
+\
+    <
+\f3\b \cf5 TextView\
+        \cf6 android\cf3 :id\cf4 ="@+id/textView"\
+        \cf6 android\cf3 :layout_width\cf4 ="wrap_content"\
+        \cf6 android\cf3 :layout_height\cf4 ="wrap_content"\
+        \cf6 android\cf3 :layout_marginTop\cf4 ="64dp"\
+        \cf6 android\cf3 :background\cf4 ="#0045E25F"\
+        \cf6 android\cf3 :text\cf4 ="@string/harpreet_singh"\
+        \cf6 android\cf3 :textColor\cf4 ="#D81B60"\
+        \cf6 android\cf3 :textSize\cf4 ="36sp"\
+        \cf6 app\cf3 :layout_constraintEnd_toEndOf\cf4 ="parent"\
+        \cf6 app\cf3 :layout_constraintStart_toStartOf\cf4 ="parent"\
+        \cf6 app\cf3 :layout_constraintTop_toTopOf\cf4 ="parent" 
+\f4\b0 \cf0 />\
+\
+    <
+\f3\b \cf5 TextView\
+        \cf6 android\cf3 :id\cf4 ="@+id/textView2"\
+        \cf6 android\cf3 :layout_width\cf4 ="191dp"\
+        \cf6 android\cf3 :layout_height\cf4 ="68dp"\
+        \cf6 android\cf3 :layout_marginBottom\cf4 ="12dp"\
+        \cf6 android\cf3 :text\cf4 ="@string/my_name_is_harpreet_i_am_currently_doing_cpct_in_lambton_college_in_toronto"\
+        \cf6 android\cf3 :textColor\cf4 ="#F4511E"\
+        \cf6 app\cf3 :layout_constraintBottom_toTopOf\cf4 ="@+id/imageView2"\
+        \cf6 app\cf3 :layout_constraintEnd_toEndOf\cf4 ="parent"\
+        \cf6 app\cf3 :layout_constraintStart_toStartOf\cf4 ="parent" 
+\f4\b0 \cf0 />\
+\
+    <
+\f3\b \cf5 ImageView\
+        \cf6 android\cf3 :id\cf4 ="@+id/imageView2"\
+        \cf6 android\cf3 :layout_width\cf4 ="273dp"\
+        \cf6 android\cf3 :layout_height\cf4 ="369dp"\
+        \cf6 android\cf3 :layout_marginEnd\cf4 ="84dp"\
+        \cf6 android\cf3 :layout_marginRight\cf4 ="84dp"\
+        \cf6 android\cf3 :layout_marginBottom\cf4 ="52dp"\
+        \cf6 app\cf3 :layout_constraintBottom_toBottomOf\cf4 ="parent"\
+        \cf6 app\cf3 :layout_constraintEnd_toEndOf\cf4 ="parent"\
+        \cf6 app\cf3 :srcCompat\cf4 ="@drawable/pic"\
+        \cf6 android\cf3 :contentDescription\cf4 ="@string/todo" 
+\f4\b0 \cf0 />\
+\
+</
+\f3\b \cf5 androidx.constraintlayout.widget.ConstraintLayout
+\f4\b0 \cf0 >\
+\pard\pardeftab720\ri0\sl259\slmult1\sa160\partightenfactor0
+
+\f1\fs22 \cf0 \
+\
+}
